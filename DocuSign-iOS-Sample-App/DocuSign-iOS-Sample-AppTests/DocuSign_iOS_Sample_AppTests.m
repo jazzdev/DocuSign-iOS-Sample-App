@@ -33,16 +33,16 @@
     DocuSignAPI* dsapi = [[DocuSignAPI alloc] init];
     [dsapi loginWithEmail:@"<your username>" 
                  password:@"<your password>"
-                 delegate:self
+                                  delegate:self
                   success:@selector(soapSuccess:)
                   failure:@selector(soapFailure:errorHandler:)];
     [self soapRunLoop];
     [dsapi release];
 }
 
-- (void)soapSuccess:(id)soapRequest
+- (void)soapSuccess:(id)parsedElements
 {
-    NSLog(@"%s soap call succeeded", class_getName([soapRequest class]));
+    NSLog(@"Soap call succeeded");
     self.soapCallActive = NO;
 }
 

@@ -55,9 +55,8 @@
 	
     NSLog(@"request: %@", soapMessage);
     NSArray* keys = [[NSArray alloc] initWithObjects:@"AccountID", @"AccountName", @"UserID", @"UserName", @"AuthenticationMessage", nil];
-    [self sendRequest:@"Credential" 
-              version:@"Credential"
-               action:@"Login"
+    [self sendRequest:@"Credential" // API Group (either "API", "Credential" or "AccountManagement")
+               method:@"Login"      // API Method
           soapMessage:soapMessage 
                 parse:keys
              delegate:loginDelegate
@@ -66,21 +65,21 @@
     [keys release];
 }
 
--(void)sendRequest:(NSString*)api 
-           version:(NSString*)version
-            action:(NSString*)action 
+-(void)sendRequest:(NSString*)apiGroup
+            method:(NSString*)apiMethod 
        soapMessage:(NSString*)soapMessage 
              parse:(NSArray*)names
           delegate:(id)reqDelegate
               done:(SEL)success
              error:(SEL)error
 {
-    NSString* soapEndpoint = [NSString stringWithFormat:@"https://www.docusign.net/api/3.0/%@.asmx", api];
+    NSString* soapEndpoint = [NSString stringWithFormat:@"https://www.docusign.net/api/3.0/%@.asmx", apiGroup];
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:soapEndpoint]];
 	
 	[theRequest setHTTPMethod:@"POST"];
 	[theRequest addValue: @"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    NSString* soapAction = [NSString stringWithFormat:@"http://www.docusign.net/API/%@/%@", version, action];
+    if ([apiGroup isEqualToString:@"API"]) apiGroup = @"3.0";
+    NSString* soapAction = [NSString stringWithFormat:@"http://www.docusign.net/API/%@/%@", apiGroup, apiMethod];
     NSLog(@"Action: %@",soapAction);
 	[theRequest addValue: soapAction forHTTPHeaderField:@"SOAPAction"];
 		
@@ -88,21 +87,18 @@
     NSString *msgLength = [NSString stringWithFormat:@"%d", theRequest.HTTPBody.length];
     [theRequest addValue: msgLength forHTTPHeaderField:@"Content-Length"];
     
+    self.delegate = reqDelegate;
+    self.successHandler = success;
+    self.errorHandler = error;
+    self.elementNamesToParse = names;
+    self.webData = [NSMutableData data];
 	NSURLConnection *theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
 	NSLog(@"Connection: %@",theConnection);
     
-	if(theConnection)
-	{
-        self.delegate = reqDelegate;
-        self.successHandler = success;
-        self.errorHandler = error;
-        self.elementNamesToParse = names;
-		self.webData = [NSMutableData data];
-	}
-	else
-	{
+	if (!theConnection)
+    {
 		[reqDelegate performSelector:error
-                          withObject:action
+                          withObject:apiMethod
                           withObject:@"Failed to create a connection to server."];
 	}
 }	
@@ -192,10 +188,8 @@
             }
             else // Everything really is OK!
             {
-                [self performSelector:@selector(soapDidFinishParsing:)
-                           withObject:self.parsedElements];
                 [self.delegate performSelector:self.successHandler
-                                    withObject:self];
+                                    withObject:self.parsedElements];
             }
         }
     }

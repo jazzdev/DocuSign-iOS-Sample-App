@@ -36,9 +36,8 @@
              delegate:id
               success:(SEL)successHandler
               failure:(SEL)errorHandler;
--(void)sendRequest:(NSString*)api
-           version:(NSString*)version
-            action:(NSString*)action 
+-(void)sendRequest:(NSString*)apiGroup
+            method:(NSString*)apiMethod 
        soapMessage:(NSString*)soapMessage 
              parse:(NSArray*)names
           delegate:(id)delegate
