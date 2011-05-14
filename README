@@ -1,0 +1,13 @@
+Sample Code for calling the DocuSign SOAP API from Objective-C
+
+Edit 
+
+  DocuSign-iOS-Sample-App/DocuSignAPI.m 
+
+and put in your integrator key.
+
+There's a unit test.  Edit 
+
+  DocuSign-iOS-Sample-AppTests/DocuSign_iOS_Sample_AppTests.m
+
+and put in your username and password.
