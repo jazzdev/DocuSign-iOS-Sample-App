@@ -33,11 +33,23 @@
 
 -(void)loginWithEmail:(NSString*)email 
              password:(NSString*)password
-             delegate:id
+             delegate:(id)reqDelegate
               success:(SEL)successHandler
               failure:(SEL)errorHandler;
+
+-(void)getFolderList:(NSString*)email
+            password:(NSString*)password
+           accountID:(NSString*)accountID
+            delegate:(id)reqDelegate
+             success:(SEL)success
+             failure:(SEL)error;
+
+-(NSString*)authHeader:(NSString*)email
+              password:(NSString*)password;
+
 -(void)sendRequest:(NSString*)apiGroup
             method:(NSString*)apiMethod 
+              auth:(NSString*)authHeader
        soapMessage:(NSString*)soapMessage 
              parse:(NSArray*)names
           delegate:(id)delegate

@@ -35,7 +35,7 @@
 
 -(void)loginWithEmail:(NSString*)email 
              password:(NSString*)password
-             delegate:(id)loginDelegate
+             delegate:(id)reqDelegate
               success:(SEL)success
               failure:(SEL)error
 {
@@ -57,23 +57,73 @@
     NSArray* keys = [[NSArray alloc] initWithObjects:@"AccountID", @"AccountName", @"UserID", @"UserName", @"AuthenticationMessage", nil];
     [self sendRequest:@"Credential" // API Group (either "API", "Credential" or "AccountManagement")
                method:@"Login"      // API Method
+                 auth:nil
           soapMessage:soapMessage 
                 parse:keys
-             delegate:loginDelegate
+             delegate:reqDelegate
                  done:success
                 error:error];
     [keys release];
 }
 
+-(void)getFolderList:(NSString*)email
+            password:(NSString*)password
+           accountID:(NSString*)accountID
+            delegate:(id)reqDelegate
+             success:(SEL)success
+             failure:(SEL)error
+{
+	NSString *soapMessage = [NSString stringWithFormat:
+							 @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+							 "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">"
+							 "  <soap:Body>"
+							 "    <GetFolderList xmlns=\"http://www.docusign.net/API/3.0\">"
+                             "      <FoldersFilter>"
+                             "        <AccountId>%@</AccountId>"
+                             "        <IncludeHierarchy>true</IncludeHierarchy>"
+                             "      </FoldersFilter>"
+                             "    </GetFolderList>"
+							 "  </soap:Body>"
+							 "</soap:Envelope>",
+                             accountID];
+	
+    NSLog(@"request: %@", soapMessage);
+    NSArray* keys = [[NSArray alloc] initWithObjects:@"FolderName", nil];
+    [self sendRequest:@"API" // API Group (either "API", "Credential" or "AccountManagement")
+               method:@"GetFolderList"
+                 auth:[self authHeader:email password:password]
+          soapMessage:soapMessage 
+                parse:keys
+             delegate:reqDelegate
+                 done:success
+                error:error];
+    [keys release];    
+}
+
+-(NSString *)authHeader:(NSString*)email password:(NSString*)password
+{	
+    return [NSString stringWithFormat:@"<DocuSignCredentials>"
+                                        "<Username>%@</Username>"
+                                        "<Password>%@</Password>"
+                                        "<IntegratorKey>%@</IntegratorKey>"
+                                        "</DocuSignCredentials>",
+                                        email,
+                                        password,
+                                        INTEGRATOR_ID];
+}
+
 -(void)sendRequest:(NSString*)apiGroup
             method:(NSString*)apiMethod 
+              auth:(NSString*)authHeader
        soapMessage:(NSString*)soapMessage 
              parse:(NSArray*)names
           delegate:(id)reqDelegate
               done:(SEL)success
              error:(SEL)error
 {
-    NSString* soapEndpoint = [NSString stringWithFormat:@"https://www.docusign.net/api/3.0/%@.asmx", apiGroup];
+    NSString* filename = apiGroup;
+    if ([apiGroup isEqualToString:@"API"]) filename = [NSString stringWithFormat:@"ds%@", apiGroup];
+    NSString* soapEndpoint = [NSString stringWithFormat:@"https://www.docusign.net/api/3.0/%@.asmx", filename];
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:soapEndpoint]];
 	
 	[theRequest setHTTPMethod:@"POST"];
@@ -82,10 +132,12 @@
     NSString* soapAction = [NSString stringWithFormat:@"http://www.docusign.net/API/%@/%@", apiGroup, apiMethod];
     NSLog(@"Action: %@",soapAction);
 	[theRequest addValue: soapAction forHTTPHeaderField:@"SOAPAction"];
+    
+    if (authHeader != nil) [theRequest addValue:authHeader forHTTPHeaderField:@"X-DocuSign-Authentication"];
 		
     [theRequest setHTTPBody: [soapMessage dataUsingEncoding:NSUTF8StringEncoding]];
     NSString *msgLength = [NSString stringWithFormat:@"%d", theRequest.HTTPBody.length];
-    [theRequest addValue: msgLength forHTTPHeaderField:@"Content-Length"];
+    [theRequest addValue:msgLength forHTTPHeaderField:@"Content-Length"];
     
     self.delegate = reqDelegate;
     self.successHandler = success;

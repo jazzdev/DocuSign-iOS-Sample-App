@@ -105,7 +105,7 @@
 		<string>IDEWorkspaceTabController_DA7552F2-0E31-4031-9296-D25B740F8FD1</string>
 		<string>IDEWorkspaceWindowControllerUniqueIdentifier</string>
 		<string>IDEActiveWorkspaceTabController</string>
-		<string>{{200, 76}, {1400, 952}}</string>
+		<string>{{126, 76}, {1400, 952}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -215,7 +215,7 @@
 		<string>IDEWorkspaceTabControllerDesignAreaSplitView</string>
 		<string>IDEShowUtilities</string>
 		<string>AssistantEditorsLayout</string>
-		<string>DocuSignAPI.m</string>
+		<string>DocuSign_iOS_Sample_AppTests.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -884,7 +884,7 @@
 				<integer>90</integer>
 			</dict>
 		</dict>
-		<string>DocuSignAPI.m</string>
+		<string>DocuSign_iOS_Sample_AppTests.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -906,7 +906,7 @@
 				<integer>93</integer>
 			</dict>
 		</dict>
-		<string>DocuSign-iOS-Sample-App</string>
+		<string>DocuSign-iOS-Sample-AppTests</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -944,7 +944,7 @@
 				<integer>98</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.m</string>
+			<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-AppTests/DocuSign_iOS_Sample_AppTests.m</string>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -1023,10 +1023,10 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>327106488.56344098</real>
-		<string>{0, 1161}</string>
+		<real>327114922.77481103</real>
+		<string>{0, 877}</string>
 		<false/>
-		<string>{219, 0}</string>
+		<string>{288, 0}</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -1045,7 +1045,7 @@
 				<integer>112</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.m</string>
+		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-AppTests/DocuSign_iOS_Sample_AppTests.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -1669,11 +1669,44 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>165</integer>
+					<integer>166</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>166</integer>
+					<integer>167</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>58</integer>
+			</dict>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>162</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>165</integer>
+				</dict>
+			</array>
+		</dict>
+		<string>DocuSign-iOS-Sample-App</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>58</integer>
+			</dict>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>162</integer>
 				</dict>
 			</array>
 		</dict>
@@ -1695,39 +1728,6 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>58</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>162</integer>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>58</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>162</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>167</integer>
-				</dict>
-			</array>
-		</dict>
-		<string>DocuSign-iOS-Sample-AppTests</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2526,9 +2526,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>327106452.96711397</real>
-		<string>{195, 997}</string>
-		<string>{617, 0}</string>
+		<real>327114922.77369303</real>
+		<string>{0, 877}</string>
+		<string>{288, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2816,9 +2816,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>327106488.56285399</real>
-		<string>{0, 1161}</string>
-		<string>{219, 0}</string>
+		<real>327114897.23819798</real>
+		<string>{0, 1159}</string>
+		<string>{173, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2864,9 +2864,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>327106173.66394699</real>
-		<string>{3, 1327}</string>
-		<string>{1119, 0}</string>
+		<real>327112098.90680701</real>
+		<string>{184, 1473}</string>
+		<string>{1356, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3257,7 +3257,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>315</integer>
+					<integer>165</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3521,7 +3521,7 @@
 				<integer>332</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>327106487.663118</real>
+			<real>327114766.58895802</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -3532,7 +3532,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 3:54 PM</string>
+		<string>Today at 6:12 PM</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -3603,7 +3603,7 @@
 				<integer>338</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.m</string>
+		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-AppTests/DocuSign_iOS_Sample_AppTests.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3621,7 +3621,7 @@
 				<integer>340</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign_iOS_Sample_AppAppDelegate.m</string>
+		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3639,7 +3639,7 @@
 				<integer>342</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-AppTests/DocuSign_iOS_Sample_AppTests.m</string>
+		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3657,7 +3657,7 @@
 				<integer>344</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSignAPI.h</string>
+		<string>file://localhost/Users/jdbrennan/src/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App/DocuSign_iOS_Sample_AppAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>

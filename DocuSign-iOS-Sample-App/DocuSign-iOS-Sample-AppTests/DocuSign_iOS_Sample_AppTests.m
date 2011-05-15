@@ -10,6 +10,9 @@
 #import "DocuSign_iOS_Sample_AppTests.h"
 #import "DocuSignAPI.h"
 
+#define EMAIL @"<your email>"
+#define PASSWORD @"<your password"
+
 @implementation DocuSign_iOS_Sample_AppTests
 
 @synthesize soapCallActive;
@@ -28,21 +31,38 @@
     [super tearDown];
 }
 
-- (void)testLogin
+- (void)testAPI
 {
     DocuSignAPI* dsapi = [[DocuSignAPI alloc] init];
-    [dsapi loginWithEmail:@"<your username>" 
-                 password:@"<your password>"
-                                  delegate:self
-                  success:@selector(soapSuccess:)
+    [dsapi loginWithEmail:EMAIL 
+                 password:PASSWORD
+                 delegate:self
+                  success:@selector(didLogin:)
                   failure:@selector(soapFailure:errorHandler:)];
     [self soapRunLoop];
     [dsapi release];
 }
 
-- (void)soapSuccess:(id)parsedElements
+- (void)testFolders
 {
-    NSLog(@"Soap call succeeded");
+}
+
+- (void)didLogin:(id)responseDictionary
+{
+    NSLog(@"Login succeeded");
+    DocuSignAPI* dsapi = [[DocuSignAPI alloc] init];
+    [dsapi getFolderList:EMAIL
+                password:PASSWORD
+               accountID:[responseDictionary objectForKey:@"AccountID"]
+                delegate:self
+                 success:@selector(didGetFolders:)
+                 failure:@selector(soapFailure:errorHandler:)];
+    [dsapi release];    
+}
+
+- (void)didGetFolders:(id)x
+{
+    NSLog(@"GetFolderList succeeded");
     self.soapCallActive = NO;
 }
 
