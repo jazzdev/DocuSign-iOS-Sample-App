@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F14BB22613C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F14BB21713C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Info.plist */; };
+		F14BB22713C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BB21A13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.m */; };
+		F14BB22813C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BB21C13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.m */; };
+		F14BB22A13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14BB21F13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.xib */; };
+		F14BB22B13C50E2E00F00CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F14BB22113C50E2E00F00CFF /* InfoPlist.strings */; };
+		F14BB22C13C50E2E00F00CFF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14BB22313C50E2E00F00CFF /* MainWindow.xib */; };
+		F14BB22D13C50E2E00F00CFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BB22513C50E2E00F00CFF /* main.m */; };
+		F14BB23513C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F14BB22F13C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Info.plist */; };
+		F14BB23613C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BB23213C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.m */; };
+		F14BB23713C5103C00F00CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F14BB23313C5103C00F00CFF /* InfoPlist.strings */; };
+		F14BB23913C5110800F00CFF /* DocuSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14BB23813C5110800F00CFF /* DocuSign.framework */; };
+		F14BB23A13C5110800F00CFF /* DocuSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14BB23813C5110800F00CFF /* DocuSign.framework */; };
 		F17138DA137F0F130061B650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138D9137F0F130061B650 /* UIKit.framework */; };
 		F17138DC137F0F130061B650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138DB137F0F130061B650 /* Foundation.framework */; };
 		F17138DE137F0F130061B650 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138DD137F0F130061B650 /* CoreGraphics.framework */; };
-		F17138E4137F0F130061B650 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F17138E2137F0F130061B650 /* InfoPlist.strings */; };
-		F17138E7137F0F130061B650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17138E6137F0F130061B650 /* main.m */; };
-		F17138EA137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17138E9137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.m */; };
-		F17138ED137F0F130061B650 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17138EB137F0F130061B650 /* MainWindow.xib */; };
-		F17138F0137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17138EF137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.m */; };
-		F17138F3137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17138F1137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.xib */; };
 		F17138FA137F0F130061B650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138D9137F0F130061B650 /* UIKit.framework */; };
 		F17138FB137F0F130061B650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138DB137F0F130061B650 /* Foundation.framework */; };
 		F17138FC137F0F130061B650 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17138DD137F0F130061B650 /* CoreGraphics.framework */; };
-		F1713904137F0F130061B650 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1713902137F0F130061B650 /* InfoPlist.strings */; };
-		F1713907137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.h in Resources */ = {isa = PBXBuildFile; fileRef = F1713906137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.h */; };
-		F1713909137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1713908137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.m */; };
-		F171391F137F108A0061B650 /* DocuSignAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F171391E137F108A0061B650 /* DocuSignAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +38,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F14BB21713C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DocuSign-iOS-Sample-App-Info.plist"; sourceTree = "<group>"; };
+		F14BB21813C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DocuSign-iOS-Sample-App-Prefix.pch"; sourceTree = "<group>"; };
+		F14BB21913C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppAppDelegate.h; sourceTree = "<group>"; };
+		F14BB21A13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppAppDelegate.m; sourceTree = "<group>"; };
+		F14BB21B13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppViewController.h; sourceTree = "<group>"; };
+		F14BB21C13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppViewController.m; sourceTree = "<group>"; };
+		F14BB22013C50E2E00F00CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DocuSign_iOS_Sample_AppViewController.xib; sourceTree = "<group>"; };
+		F14BB22213C50E2E00F00CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F14BB22413C50E2E00F00CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F14BB22513C50E2E00F00CFF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F14BB22F13C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DocuSign-iOS-Sample-AppTests-Info.plist"; sourceTree = "<group>"; };
+		F14BB23013C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DocuSign-iOS-Sample-AppTests-Prefix.pch"; sourceTree = "<group>"; };
+		F14BB23113C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppTests.h; sourceTree = "<group>"; };
+		F14BB23213C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppTests.m; sourceTree = "<group>"; };
+		F14BB23413C5103C00F00CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F14BB23813C5110800F00CFF /* DocuSign.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DocuSign.framework; sourceTree = "<group>"; };
 		F17138D5137F0F130061B650 /* DocuSign-iOS-Sample-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DocuSign-iOS-Sample-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17138D9137F0F130061B650 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F17138DB137F0F130061B650 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F17138DD137F0F130061B650 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F17138E1137F0F130061B650 /* DocuSign-iOS-Sample-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocuSign-iOS-Sample-App-Info.plist"; sourceTree = "<group>"; };
-		F17138E3137F0F130061B650 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F17138E5137F0F130061B650 /* DocuSign-iOS-Sample-App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocuSign-iOS-Sample-App-Prefix.pch"; sourceTree = "<group>"; };
-		F17138E6137F0F130061B650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F17138E8137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppAppDelegate.h; sourceTree = "<group>"; };
-		F17138E9137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppAppDelegate.m; sourceTree = "<group>"; };
-		F17138EC137F0F130061B650 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		F17138EE137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppViewController.h; sourceTree = "<group>"; };
-		F17138EF137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppViewController.m; sourceTree = "<group>"; };
-		F17138F2137F0F130061B650 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DocuSign_iOS_Sample_AppViewController.xib; sourceTree = "<group>"; };
 		F17138F9137F0F130061B650 /* DocuSign-iOS-Sample-AppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DocuSign-iOS-Sample-AppTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1713901137F0F130061B650 /* DocuSign-iOS-Sample-AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocuSign-iOS-Sample-AppTests-Info.plist"; sourceTree = "<group>"; };
-		F1713903137F0F130061B650 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F1713905137F0F130061B650 /* DocuSign-iOS-Sample-AppTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocuSign-iOS-Sample-AppTests-Prefix.pch"; sourceTree = "<group>"; };
-		F1713906137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocuSign_iOS_Sample_AppTests.h; sourceTree = "<group>"; };
-		F1713908137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocuSign_iOS_Sample_AppTests.m; sourceTree = "<group>"; };
-		F171391D137F108A0061B650 /* DocuSignAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocuSignAPI.h; sourceTree = "<group>"; };
-		F171391E137F108A0061B650 /* DocuSignAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocuSignAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				F17138DA137F0F130061B650 /* UIKit.framework in Frameworks */,
 				F17138DC137F0F130061B650 /* Foundation.framework in Frameworks */,
 				F17138DE137F0F130061B650 /* CoreGraphics.framework in Frameworks */,
+				F14BB23913C5110800F00CFF /* DocuSign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,17 +80,47 @@
 				F17138FA137F0F130061B650 /* UIKit.framework in Frameworks */,
 				F17138FB137F0F130061B650 /* Foundation.framework in Frameworks */,
 				F17138FC137F0F130061B650 /* CoreGraphics.framework in Frameworks */,
+				F14BB23A13C5110800F00CFF /* DocuSign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F14BB21613C50E2E00F00CFF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F14BB21713C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Info.plist */,
+				F14BB21813C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Prefix.pch */,
+				F14BB21913C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.h */,
+				F14BB21A13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.m */,
+				F14BB21B13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.h */,
+				F14BB21C13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.m */,
+				F14BB21F13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.xib */,
+				F14BB22113C50E2E00F00CFF /* InfoPlist.strings */,
+				F14BB22313C50E2E00F00CFF /* MainWindow.xib */,
+				F14BB22513C50E2E00F00CFF /* main.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F14BB22E13C5103C00F00CFF /* test */ = {
+			isa = PBXGroup;
+			children = (
+				F14BB22F13C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Info.plist */,
+				F14BB23013C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Prefix.pch */,
+				F14BB23113C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.h */,
+				F14BB23213C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.m */,
+				F14BB23313C5103C00F00CFF /* InfoPlist.strings */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		F17138CA137F0F130061B650 = {
 			isa = PBXGroup;
 			children = (
-				F17138DF137F0F130061B650 /* DocuSign-iOS-Sample-App */,
-				F17138FF137F0F130061B650 /* DocuSign-iOS-Sample-AppTests */,
+				F14BB21613C50E2E00F00CFF /* src */,
+				F14BB22E13C5103C00F00CFF /* test */,
 				F17138D8137F0F130061B650 /* Frameworks */,
 				F17138D6137F0F130061B650 /* Products */,
 			);
@@ -106,58 +138,12 @@
 		F17138D8137F0F130061B650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F14BB23813C5110800F00CFF /* DocuSign.framework */,
 				F17138D9137F0F130061B650 /* UIKit.framework */,
 				F17138DB137F0F130061B650 /* Foundation.framework */,
 				F17138DD137F0F130061B650 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F17138DF137F0F130061B650 /* DocuSign-iOS-Sample-App */ = {
-			isa = PBXGroup;
-			children = (
-				F17138E8137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.h */,
-				F17138E9137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.m */,
-				F17138EB137F0F130061B650 /* MainWindow.xib */,
-				F17138EE137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.h */,
-				F17138EF137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.m */,
-				F17138F1137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.xib */,
-				F17138E0137F0F130061B650 /* Supporting Files */,
-				F171391D137F108A0061B650 /* DocuSignAPI.h */,
-				F171391E137F108A0061B650 /* DocuSignAPI.m */,
-			);
-			path = "DocuSign-iOS-Sample-App";
-			sourceTree = "<group>";
-		};
-		F17138E0137F0F130061B650 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F17138E1137F0F130061B650 /* DocuSign-iOS-Sample-App-Info.plist */,
-				F17138E2137F0F130061B650 /* InfoPlist.strings */,
-				F17138E5137F0F130061B650 /* DocuSign-iOS-Sample-App-Prefix.pch */,
-				F17138E6137F0F130061B650 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F17138FF137F0F130061B650 /* DocuSign-iOS-Sample-AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				F1713906137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.h */,
-				F1713908137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.m */,
-				F1713900137F0F130061B650 /* Supporting Files */,
-			);
-			path = "DocuSign-iOS-Sample-AppTests";
-			sourceTree = "<group>";
-		};
-		F1713900137F0F130061B650 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1713901137F0F130061B650 /* DocuSign-iOS-Sample-AppTests-Info.plist */,
-				F1713902137F0F130061B650 /* InfoPlist.strings */,
-				F1713905137F0F130061B650 /* DocuSign-iOS-Sample-AppTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17138E4137F0F130061B650 /* InfoPlist.strings in Resources */,
-				F17138ED137F0F130061B650 /* MainWindow.xib in Resources */,
-				F17138F3137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.xib in Resources */,
+				F14BB22613C50E2E00F00CFF /* DocuSign-iOS-Sample-App-Info.plist in Resources */,
+				F14BB22A13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.xib in Resources */,
+				F14BB22B13C50E2E00F00CFF /* InfoPlist.strings in Resources */,
+				F14BB22C13C50E2E00F00CFF /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1713904137F0F130061B650 /* InfoPlist.strings in Resources */,
-				F1713907137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.h in Resources */,
+				F14BB23513C5103C00F00CFF /* DocuSign-iOS-Sample-AppTests-Info.plist in Resources */,
+				F14BB23713C5103C00F00CFF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17138E7137F0F130061B650 /* main.m in Sources */,
-				F17138EA137F0F130061B650 /* DocuSign_iOS_Sample_AppAppDelegate.m in Sources */,
-				F17138F0137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.m in Sources */,
-				F171391F137F108A0061B650 /* DocuSignAPI.m in Sources */,
+				F14BB22713C50E2E00F00CFF /* DocuSign_iOS_Sample_AppAppDelegate.m in Sources */,
+				F14BB22813C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.m in Sources */,
+				F14BB22D13C50E2E00F00CFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1713909137F0F130061B650 /* DocuSign_iOS_Sample_AppTests.m in Sources */,
+				F14BB23613C5103C00F00CFF /* DocuSign_iOS_Sample_AppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,34 +280,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F17138E2137F0F130061B650 /* InfoPlist.strings */ = {
+		F14BB21F13C50E2E00F00CFF /* DocuSign_iOS_Sample_AppViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F17138E3137F0F130061B650 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F17138EB137F0F130061B650 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F17138EC137F0F130061B650 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		F17138F1137F0F130061B650 /* DocuSign_iOS_Sample_AppViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F17138F2137F0F130061B650 /* en */,
+				F14BB22013C50E2E00F00CFF /* en */,
 			);
 			name = DocuSign_iOS_Sample_AppViewController.xib;
 			sourceTree = "<group>";
 		};
-		F1713902137F0F130061B650 /* InfoPlist.strings */ = {
+		F14BB22113C50E2E00F00CFF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F1713903137F0F130061B650 /* en */,
+				F14BB22213C50E2E00F00CFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F14BB22313C50E2E00F00CFF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F14BB22413C50E2E00F00CFF /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F14BB23313C5103C00F00CFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F14BB23413C5103C00F00CFF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -342,6 +328,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-I/usr/include/libxml2";
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -356,7 +344,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-I/usr/include/libxml2",
+				);
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -366,10 +358,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App-Prefix.pch";
-				INFOPLIST_FILE = "DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App-Info.plist";
+				GCC_PREFIX_HEADER = "src/DocuSign-iOS-Sample-App-Prefix.pch";
+				INFOPLIST_FILE = "src/DocuSign-iOS-Sample-App-Info.plist";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -380,9 +377,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App-Prefix.pch";
-				INFOPLIST_FILE = "DocuSign-iOS-Sample-App/DocuSign-iOS-Sample-App-Info.plist";
+				GCC_PREFIX_HEADER = "src/DocuSign-iOS-Sample-App-Prefix.pch";
+				INFOPLIST_FILE = "src/DocuSign-iOS-Sample-App-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -397,13 +398,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DocuSign-iOS-Sample-AppTests/DocuSign-iOS-Sample-AppTests-Prefix.pch";
-				INFOPLIST_FILE = "DocuSign-iOS-Sample-AppTests/DocuSign-iOS-Sample-AppTests-Info.plist";
+				GCC_PREFIX_HEADER = "test/DocuSign-iOS-Sample-AppTests-Prefix.pch";
+				INFOPLIST_FILE = "test/DocuSign-iOS-Sample-AppTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lxml2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -419,13 +422,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DocuSign-iOS-Sample-AppTests/DocuSign-iOS-Sample-AppTests-Prefix.pch";
-				INFOPLIST_FILE = "DocuSign-iOS-Sample-AppTests/DocuSign-iOS-Sample-AppTests-Info.plist";
+				GCC_PREFIX_HEADER = "test/DocuSign-iOS-Sample-AppTests-Prefix.pch";
+				INFOPLIST_FILE = "test/DocuSign-iOS-Sample-AppTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SenTestingKit,
+					"-lxml2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -452,6 +457,7 @@
 				F171390E137F0F130061B650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F171390F137F0F130061B650 /* Build configuration list for PBXNativeTarget "DocuSign-iOS-Sample-AppTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +466,7 @@
 				F1713911137F0F130061B650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

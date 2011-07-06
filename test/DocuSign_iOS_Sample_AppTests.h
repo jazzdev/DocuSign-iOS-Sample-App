@@ -8,12 +8,11 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-
+@class SOAPFault;
 @interface DocuSign_iOS_Sample_AppTests : SenTestCase {
 }
 
-@property (assign) BOOL soapCallActive;
-
--(void)soapRunLoop;
+-(void)getFolders:(NSString*)accountID;
+-(void)soapError:(id)request fault:(SOAPFault*)fault;
 
 @end
