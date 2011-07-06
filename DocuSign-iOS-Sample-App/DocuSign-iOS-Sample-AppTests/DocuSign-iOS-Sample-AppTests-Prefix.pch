@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'DocuSign-iOS-Sample-AppTests' target in the 'DocuSign-iOS-Sample-AppTests' project
-//
-
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-#endif
