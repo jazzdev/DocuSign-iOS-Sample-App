@@ -6,24 +6,21 @@
 //  Copyright 2011 DocuSign Inc. All rights reserved.
 //
 
-#import "objc/runtime.h"
-#import "DocuSign_iOS_Sample_AppTests.h"
-#import <DocuSign/DocuSign.h>
-#import <DocuSign/DSCredential.h>
-#import <DocuSign/DSAPIService.h>
-
 // The DocuSign WSDL API requires libxml2. Under the Build Settings tab:
 // 
 // 1. In the Linking section add -lxml2 to Other Linker Flags property
 // 2. In the LLVM GCC Language section add -I/usr/include/libxml2 to the Other C Flags property
 
 #define BASE_URL @"https://demo.docusign.net/"
-//#define EMAIL @"<your email>"
-//#define PASSWORD @"<your password"
-//#define INTEGRATOR_ID @"<your integrator key>"
-#define INTEGRATOR_ID @"DOCU-deb54d45-f07f-47bc-bced-173d33528842"
-#define EMAIL @"jd.brennan@docusign.com"
-#define PASSWORD @"asdfasdf"
+#define EMAIL @"<your email>"
+#define PASSWORD @"<your password"
+#define INTEGRATOR_ID @"<your integrator key>"
+
+#import "objc/runtime.h"
+#import "DocuSign_iOS_Sample_AppTests.h"
+#import <DocuSign/DocuSign.h>
+#import <DocuSign/DSCredential.h>
+#import <DocuSign/DSAPIService.h>
 
 @implementation DocuSign_iOS_Sample_AppTests
 
