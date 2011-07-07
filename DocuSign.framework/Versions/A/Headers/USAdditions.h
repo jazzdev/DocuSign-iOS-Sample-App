@@ -63,6 +63,7 @@
 
 @property (nonatomic) BOOL boolValue;
 
++ (USBoolean *)with:(BOOL)aValue;
 - (id)initWithBool:(BOOL)aValue;
 - (NSString *)stringValue;
 
