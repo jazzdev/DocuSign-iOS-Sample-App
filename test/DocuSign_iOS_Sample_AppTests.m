@@ -46,7 +46,7 @@
     request.Email = EMAIL;
     request.Password = PASSWORD;
     
-    DSCredentialSoapBindingResponse* response = [binding LoginUsingParameters:request];
+    USSoapResponse* response = [binding LoginUsingParameters:request];
     
     for (id bodyPart in response.bodyParts) {
         NSLog(@"part is %s",class_getName([bodyPart class]));
@@ -85,7 +85,7 @@
     foldersFilter.IncludeHierarchy = [[[USBoolean alloc] initWithBool:YES] autorelease];
     request.FoldersFilter = foldersFilter;
     
-    DSAPIServiceSoapBindingResponse* response = [binding GetFolderListUsingParameters:request];
+    USSoapResponse* response = [binding GetFolderListUsingParameters:request];
     for (id bodyPart in response.bodyParts) {
         NSLog(@"part is %s",class_getName([bodyPart class]));
         if ([bodyPart isKindOfClass:[SOAPFault class]]) { 
